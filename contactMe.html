@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Your Name</a>
+        <nav class="navbar">
+            <a href="homePage.html">Home</a>
+            <a href="aboutMe.html">About Me</a>
+            <a href="projectPage.html">Projects</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html" class="active">Contact Me</a>
+        </nav>
+    </header>
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p>Email: your@email.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <form action="process_contact.php" method="post">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="text" name="contact_number" placeholder="Contact Number" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+</body>
+</html>
