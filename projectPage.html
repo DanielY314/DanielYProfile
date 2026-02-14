@@ -3,55 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Projects | Daniel Yang</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Your Name</a>
+        <a href="homePage.html" class="logo">Daniel Y.</a>
         <nav class="navbar">
             <a href="homePage.html">Home</a>
             <a href="aboutMe.html">About Me</a>
             <a href="projectPage.html" class="active">Projects</a>
-            <a href="service.html">Services</a>
-            <a href="contactMe.html">Contact Me</a>
+            <a href="contactMe.html">Contact</a>
         </nav>
     </header>
-    <h2>Projects</h2>
-    <section class="home">
-    
-        <div class="home-content">
-            <img src="photo/project1.jpg" alt="Project 1">
-            <h3>Project 1 Name</h3>
-            <p>
-                I played a lead role in the development of this web application. 
-                The project involved creating a user-friendly interface and implementing 
-                complex functionality to enhance user experience. The outcome was a 
-                successful, user-engaging website that received positive feedback from 
-                our client.
-            </p>
-        </div>
-        <div class="home-content">
-            <img src="photo/project2.jpeg" alt="Project 2">
-            <h3>Project 2 Name</h3>
-            <p>
-                For this project, I collaborated with a team to design and develop a 
-                responsive website for a client in the e-commerce industry. My role 
-                included front-end development and ensuring the site's responsiveness 
-                across various devices. The project resulted in increased sales and 
-                improved user satisfaction.
-            </p>
-        </div>
-        <div class="home-content">
-            <img src="photo/project3.jpeg" alt="Project 3">
-            <h3>Project 3 Name</h3>
-            <p>
-                I undertook full-stack development responsibilities for this project. 
-                We built a custom content management system (CMS) for a publishing 
-                company, allowing them to manage their content efficiently. The project 
-                delivered a tailored solution that streamlined their content management 
-                process and boosted their online presence.
-            </p>
+
+    <section class="projects-section">
+        <h2 class="section-title">My <span>Projects</span></h2>
+
+        <div class="projects-grid">
+            <!-- Job Portal -->
+            <div class="project-card">
+                <div class="project-card-body">
+                    <h3>Job Portal</h3>
+                    <p>
+                        A scalable MERN-stack job portal for recruiters and job seekers.
+                        Features secure JWT authentication, role-based access control,
+                        responsive React frontend with reusable UI components, and
+                        RESTful backend APIs for managing job postings and applications.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">Express</span>
+                        <span class="project-tag">MongoDB</span>
+                        <span class="project-tag">JWT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DanielY314/job-portal" target="_blank" class="github-link">
+                            <i class='bx bxl-github'></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Management System -->
+            <div class="project-card">
+                <div class="project-card-body">
+                    <h3>Event Management System</h3>
+                    <p>
+                        A full-stack restaurant web app with customer management,
+                        booking system, and contact form. Built with a C# backend
+                        featuring structured REST APIs and a modern, responsive
+                        React frontend with cross-browser compatibility.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">C#</span>
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">REST API</span>
+                        <span class="project-tag">SQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DanielY314/RestaurantManagement" target="_blank" class="github-link">
+                            <i class='bx bxl-github'></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>

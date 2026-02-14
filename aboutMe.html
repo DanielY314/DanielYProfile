@@ -3,49 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Me | Daniel Yang</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Daniel Y.</a>
-        
+        <a href="homePage.html" class="logo">Daniel Y.</a>
         <nav class="navbar">
-            <a href="homePage.html" >Home</a>
+            <a href="homePage.html">Home</a>
             <a href="aboutMe.html" class="active">About Me</a>
             <a href="projectPage.html">Projects</a>
-            <a href="service.html">Services</a>            
-            <a href="contactMe.html">Contact Me</a>
+            <a href="contactMe.html">Contact</a>
         </nav>
     </header>
-        
-    <section class="home">
-        <div class="home-sci">
-            <a href="#"><i class='bx bxl-facebook' ></i></i></a>
-            <a href="#"><i class='bx bxl-twitter' ></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
-        </div>
-        <div class="home-content">
-            <h1>Hi, I'm Daniel Yang</h1>
-            <h3>Frontend Developer</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas beatae
-               unde amet perferendis in veniam provident minus, ad nostrum facilis soluta excepturi
-               ut tempore. Ab sint iusto tempora reiciendis deleniti!
+
+    <section class="about-section">
+        <div class="about-intro">
+            <h1>About <span>Me</span></h1>
+            <p>
+                I'm a Software Developer at KATEC with a passion for building
+                full-stack web applications. I completed my Software Engineering
+                Technology diploma at Centennial College with a GPA of 4.2/4.5.
+                I enjoy solving real-world problems through clean, efficient code
+                and modern development practices.
             </p>
-            <a href="#" class="btn">Hire me</a>
         </div>
 
-        <div class="home-img">
-            <div class="glowing-circle">
-                <span></span>
-                <span></span>
-                <div class="image">
-                    <img src="photo.png" alt="">
+        <div class="about-grid">
+            <!-- Technical Skills -->
+            <div class="about-card">
+                <h3><i class='bx bx-code-alt'></i> Technical Skills</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express.js</span>
+                    <span class="skill-tag">TailwindCSS</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="about-card">
+                <h3><i class='bx bx-briefcase'></i> Experience</h3>
+                <div class="experience-item">
+                    <div class="role">Software Developer</div>
+                    <div class="company">KATEC, Vancouver BC</div>
+                    <div class="period">May 2023 - Present</div>
+                </div>
+                <p>
+                    Building community websites, job portals, event management systems,
+                    and AI-powered tools using MERN stack, C#, and React.
+                </p>
+            </div>
+
+            <!-- Education -->
+            <div class="about-card">
+                <h3><i class='bx bx-book'></i> Education</h3>
+                <div class="experience-item">
+                    <div class="role">Software Engineering Technology</div>
+                    <div class="company">Centennial College, Toronto ON</div>
+                    <div class="period">Sep 2022 - Apr 2025</div>
+                </div>
+                <p>GPA: 4.2 / 4.5</p>
+            </div>
+
+            <!-- Awards -->
+            <div class="about-card">
+                <h3><i class='bx bx-trophy'></i> Awards</h3>
+                <div class="achievement">
+                    <i class='bx bxs-medal'></i>
+                    <div class="achievement-info">
+                        <div class="title">2nd Place — SRR x WIMTACH Hackathon</div>
+                        <div class="desc">
+                            Oct 2024 — Collaborated with a cross-functional team to design
+                            a technology-driven solution for real-world challenges in senior care.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
 </body>
 </html>

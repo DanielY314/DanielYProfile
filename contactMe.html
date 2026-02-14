@@ -3,33 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Contact | Daniel Yang</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Your Name</a>
+        <a href="homePage.html" class="logo">Daniel Y.</a>
         <nav class="navbar">
             <a href="homePage.html">Home</a>
             <a href="aboutMe.html">About Me</a>
             <a href="projectPage.html">Projects</a>
-            <a href="service.html">Services</a>
-            <a href="contact.html" class="active">Contact Me</a>
+            <a href="contactMe.html" class="active">Contact</a>
         </nav>
     </header>
-    <section class="contact">
-        <h2>Contact Me</h2>
+
+    <section class="contact-section">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+
         <div class="contact-info">
-            <p>Email: your@email.com</p>
-            <p>Phone: (123) 456-7890</p>
+            <div class="contact-info-item">
+                <i class='bx bx-envelope'></i>
+                <a href="mailto:daniel.yang314@gmail.com">daniel.yang314@gmail.com</a>
+            </div>
+            <div class="contact-info-item">
+                <i class='bx bxl-github'></i>
+                <a href="https://github.com/DanielY314" target="_blank">GitHub</a>
+            </div>
+            <div class="contact-info-item">
+                <i class='bx bxl-linkedin'></i>
+                <a href="https://www.linkedin.com/in/daniel-dhyang/" target="_blank">LinkedIn</a>
+            </div>
         </div>
-        <form action="process_contact.php" method="post">
-            <input type="text" name="first_name" placeholder="First Name" required>
-            <input type="text" name="last_name" placeholder="Last Name" required>
-            <input type="text" name="contact_number" placeholder="Contact Number" required>
-            <input type="email" name="email" placeholder="Email Address" required>
+
+        <form class="contact-form" action="mailto:daniel.yang314@gmail.com" method="post" enctype="text/plain">
+            <div class="form-row">
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+            </div>
+            <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message">
+            <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
     </section>
 </body>
